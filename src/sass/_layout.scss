@@ -32,11 +32,11 @@ body {
   background-color: #111;
   overflow: hidden;
  display: flex;
- 
  flex-direction: column; 
+  z-index: 20;
 }
 
-.a13 {
+.Xa13 {
 border: 0.1px solid yellow;
 }
 
@@ -148,7 +148,7 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 2% 22% 22% 22%;
+margin: 8% 22% 22% 22%;
 width: 70%;
 padding: 8rem 0px 8rem;
 background-color: #fff;
@@ -163,10 +163,10 @@ box-shadow: 0px 0px 50px 0px #000;
   align-items: center;
   flex-direction: column;
   // margin-left: -150px;
-  margin-top: 0px;
+  margin-top: -100px;
   // margin-right: 100px;
   background-color: white;
-  
+width:100%;  
 }  
 
 .chart {
@@ -186,18 +186,15 @@ width: 60vw;
 .navigation {
   position: relative;
   display: flex;
+  position: fixed;
   justify-content: flex-end;
   flex-direction: row;
   align-items: center;
   text-align: center;
   border-bottom: 1px solid gray;
+  background-color: #fff;
   width:100%;
-
-
-
-
-
-
+  z-index: 10;
 }
 
 .navigation a {
@@ -216,13 +213,6 @@ width: 60vw;
 }
 
 
-span {
-
-margin-right:20px;
-margin-left:5px;
-
-padding-right: 5px ;
-}
 
 
 /*table*/
@@ -233,16 +223,86 @@ flex-direction: row;
 justify-content: center;
 text-align: center;
 align-items: center;
-padding: 2rem;
+padding: 2rem 0rem 4rem 0rem;
 // border: 1px solid #000;
-
 }
-.table-cell {
-  display: flex;
-justify-content: space-between;
+
+.line-opaq  {
+  margin-bottom:2rem;
   border-bottom: 1px solid #000;
-// padding:0px 200px 0px 200px ;
+  padding-right: 69%;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  padding-left:20px;
+  width:300px;  
+}
+
+.data {
+display: flex;
+justify-content: center;
+margin-bottom:2rem;
+border-bottom: 1px solid #000;
+padding: 0rem 30% 2rem 30%;
+& .form-data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: left;
+  
+
+  
+}
+}
 
 
+
+.box {
+display: flex;
+flex-direction: column;  
+text-align: left;
+align-items: flex-start;
+margin-right: 2rem;
 
 }
+
+
+.table-cell {
+display: flex;
+flex-direction: row;
+margin-bottom:2rem;
+justify-content: space-evenly;
+align-items: flex-start;
+border-bottom: 1px solid #000;
+// padding-left:0px ;
+padding-right:250px ;
+width:400px;
+}
+
+
+
+.table-cell span {
+  display: flex;
+  // align-items: flex-start;
+  justify-content: space-between;
+
+  }
+
+
+.content-section {
+display: flex;
+position: relative;
+flex-direction: column;
+}
+
+
+
+.line, .link {
+color:#000;
+
+}
+
+
+
