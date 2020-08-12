@@ -27,5 +27,8 @@
         "no-console": [
             "off"
         ]
+    },
+    "globals": {
+        "Chart": true
     }
 }

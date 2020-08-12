@@ -10,13 +10,24 @@ html {
 
 font-family: $paragraph-font;
 
+
 }
 
 
 body {
-  background: rgb(222, 231, 186);
+  background: rgb(240, 247, 214);
 }
 
+
+.btn {
+
+  background-color: rgb(255, 123, 0);
+  padding: 5px 10px;
+  color: #fff;
+  margin-left: 10px;
+  border:none;
+  border-radius: 5px;
+}
 
 
 /*Side menu*/
@@ -130,6 +141,7 @@ h1 {
 & img {
 
   width:80px;
+  height: 100%;
   border-radius: 50%;
   padding-right: 10px;
 }
@@ -148,13 +160,48 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 8% 22% 22% 22%;
+margin: 8% 22% 0% 22%;
 width: 70%;
 padding: 8rem 0px 8rem;
 background-color: #fff;
 box-shadow: 0px 0px 50px 0px #000;
-
 }
+
+
+.input1 {
+border-radius: 0px 0px 0px 1555px;
+padding: 5px;
+border: 1px solid #111;
+font-size: 15px;
+}
+
+.input2 {
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px;
+  border: 1px solid #111;
+  font-size: 15px;
+}
+
+
+
+.container-content-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 22% 0% 22%;
+  width: 70%;
+  padding: 8rem 0px 8rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px 0px #000;
+  
+  }
+
+
+
+
+
+
 
 
 .section-general-statistic {
@@ -198,6 +245,8 @@ width: 60vw;
 }
 
 .navigation a {
+  display: flex;
+  align-items: center;
   color: #000;
   
 }
@@ -249,7 +298,7 @@ padding: 0rem 30% 2rem 30%;
 & .form-data{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+color: #fff;  justify-content: space-evenly;
   align-items: left;
   
 
@@ -273,11 +322,11 @@ margin-right: 2rem;
 display: flex;
 flex-direction: row;
 margin-bottom:2rem;
-justify-content: space-evenly;
-align-items: flex-start;
+justify-content: space-between;
+align-items: center;
 border-bottom: 1px solid #000;
 // padding-left:0px ;
-padding-right:250px ;
+// padding-right:250px ;
 width:400px;
 }
 
