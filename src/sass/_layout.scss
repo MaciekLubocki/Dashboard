@@ -14,6 +14,19 @@ body {
   background: rgb(240, 247, 214);
 }
 
+.trash {
+  width: 15px;
+  margin: 0px 10px;
+}
+
+.linkz {
+  width: 20px;
+  margin: 0px 10px;
+}
+
+.line a:hover {
+  color: #000 !important;
+}
 
 .btn {
   background-color: rgb(255, 123, 0);
@@ -41,18 +54,16 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgb(59, 59, 59);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   z-index: 20;
-  transition: visibility 0s, opacity 0.5s linear;
 }
 
-
 .sidebar-elements:hover {
-background: rgb(48, 46, 46);
-border-left:5px  solid orange;
+  background: rgb(48, 46, 46);
+  border-left: 5px solid orange;
 }
 
 
@@ -67,7 +78,8 @@ border-left:5px  solid orange;
   justify-content: left;
   align-items: left;
   padding: 20px 0px 20px 0px;
-  border-bottom: 1px solid rgb(114, 98, 98);
+  border-bottom: 1px solid rgb(185, 183, 183);
+  animation: popup 1s linear;
 }
 
 .sidebar li {
@@ -77,7 +89,7 @@ border-left:5px  solid orange;
   padding: 10px 0px 10px 0px;
 }
 
-ul img {
+.sidebar img {
   width: 15px;
   margin: 0px 10px;
   filter: invert(100%);
@@ -89,12 +101,12 @@ a {
   color: $side-font-color;
   list-style: none;
   text-decoration: none;
-  }
+}
 
 a:hover {
   color: $side-font-color;
   text-decoration: none !important;
-  
+
 }
 
 a span:hover {
@@ -124,7 +136,7 @@ a:active {
   align-items: center;
   text-align: center;
 
-  h1{
+  h1 {
     font-family: $logo-font;
     color: $side-font-color;
     margin-right: 20px;
@@ -147,7 +159,7 @@ a:active {
     font-size: 18px;
   }
 
-  img  {
+  img {
     flex: 0 0 60px;
     width: 60px;
     height: 60px;
@@ -180,11 +192,11 @@ a:active {
   background: #47f801;
   content: '';
   top: 20px;
-  left: 1080px;
+  left: 1067px;
   border-radius: 50%;
   transition: .5s all ease-in-out;
   position: absolute;
-  
+
 }
 
 .img-s-2::after {
@@ -199,14 +211,16 @@ a:active {
   content: '';
   top: 5px;
   left: 50px;
-  transition: .5s all ease-in-out; }
+  transition: .5s all ease-in-out;
+}
 
 .pseudo-circle img {
   max-width: 250px;
   height: auto;
   object-fit: cover;
   transition: 1s all linear;
-  display: block; }
+  display: block;
+}
 
 
 .img-s-2 {
@@ -217,7 +231,7 @@ a:active {
 
 .img-s-2:hover::after {
   top: 5px;
-  left: 50px; 
+  left: 50px;
   background: rgb(241, 245, 0);
 }
 
@@ -237,32 +251,52 @@ a:active {
   width: 70%;
   padding: 8rem 0px 8rem;
   background-color: #fff;
-  box-shadow: 0px 0px 50px 0px #000;
+  box-shadow: 0px 0px 50px 0px rgb(185, 183, 183);
 }
 
 .show {
+  animation: popup2 1s linear 2.5s slidein;
   display: none;
+ 
 }
 
-.roll {
-  top:0px;
-  left:10px;
-  transform: translate(-5rem, 7.5rem);
-  position: absolute;
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: translatey(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes popup2 {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  to {
+    opacity: 0;
+    transform: translatey(-100%);
+  }
 }
 
 .input1 {
-  border-radius: 0px 0px 0px 1555px;
+  border-radius: 5px 0px 0px 5px;
   padding: 5px;
-  border: 1px solid #111;
-  font-size: 1px;
+  border: 1px solid rgb(185, 183, 183);
+  font-size: 14px;
 }
 
 .input2 {
   border-radius: 0px 5px 5px 0px;
   padding: 5px;
-  border: 1px solid #111;
-  font-size: 15px;
+  border: 1px solid rgb(185, 183, 183);
+  font-size: 14px;
 }
 
 .container-content-2 {
@@ -274,7 +308,7 @@ a:active {
   width: 70%;
   padding: 8rem 0px 8rem;
   background-color: #fff;
-  box-shadow: 0px 0px 50px 0px #000;
+  box-shadow: 0px 0px 50px 0px rgb(185, 183, 183);
 }
 
 .section-general-statistic {
@@ -311,7 +345,7 @@ a:active {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(185, 183, 183);
   background-color: #fff;
   width: 100%;
   z-index: 10;
@@ -324,13 +358,13 @@ a:active {
 }
 
 .img {
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
+  border-right: 1px solid rgb(185, 183, 183);
+  border-left: 1px solid rgb(185, 183, 183);
   padding: 20px 20px 20px 20px;
 
   span {
     padding-left: 15px;
-    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -352,7 +386,7 @@ a:active {
 
 .line-opaq {
   margin-bottom: 2rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(185, 183, 183);
   padding-right: 69%;
 }
 
@@ -367,7 +401,7 @@ a:active {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(185, 183, 183);
   padding: 0rem 30% 2rem 30%;
 
   .form-data {
@@ -392,7 +426,7 @@ a:active {
   margin-bottom: 2rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(185, 183, 183);
   // padding-left:0px ;
   // padding-right:250px ;
   width: 400px;
@@ -418,7 +452,11 @@ a:active {
 .list {
   margin: 2rem;
   border-collapse: collapse;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgb(185, 183, 183);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .line {
@@ -432,13 +470,19 @@ a:active {
   // border-bottom: 1px solid #000;
   // padding:20px;
   // padding-right:250px ;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(185, 183, 183);
   width: 800px;
 }
 
 .line:hover {
-background: rgb(151, 151, 151);
+  background: rgb(240, 247, 214);
+  color: #5452a7;
+}
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 
 }
