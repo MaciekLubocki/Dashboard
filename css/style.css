@@ -390,7 +390,12 @@ body {
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-@keyframes .Xa13 {
+.sidebar-elements:hover {
+  background: #302e2e;
+  border-left: 5px  solid orange;
+}
+
+.Xa13 {
   border: 0.1px solid yellow;
 }
 
@@ -412,7 +417,7 @@ body {
   left: 0px;
   list-style: none;
   color: #fff;
-  margin: 10px;
+  padding: 10px 0px 10px 0px;
 }
 
 ul img {
@@ -426,6 +431,11 @@ a {
   color: #fff;
   list-style: none;
   text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none !important;
 }
 
 a span:hover {
@@ -493,15 +503,51 @@ a:active {
   height: 60px;
   border-radius: 100%;
   margin-right: 10px;
+  position: relative;
 }
 
 .img-s::after {
-  content: '';
-  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
   width: 7px;
   height: 7px;
-  border-radius: 7.5px;
-  background-color: #00f700;
+  background: #47f801;
+  content: '';
+  top: 20px;
+  left: 1080px;
+  border-radius: 50%;
+  transition: .5s all ease-in-out;
+  position: absolute;
+}
+
+.img-s:hover::after {
+  background: #f1f500;
+  top: 20px;
+  left: 1080px;
+}
+
+.img-s-2::after {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #47f801;
+  content: '';
+  top: 450px;
+  left: 65px;
+  border-radius: 50%;
+  transition: .5s all ease-in-out;
+  position: absolute;
+}
+
+.img-s-2:hover::after {
+  top: 0px;
+  left: 0px;
+  top: 445px;
+  left: 65px;
+  background: #f1f500;
 }
 
 .side-picture {
@@ -531,6 +577,13 @@ a:active {
 
 .show {
   display: none;
+}
+
+.roll {
+  top: 0px;
+  left: 10px;
+  transform: translate(-5rem, 7.5rem);
+  position: absolute;
 }
 
 .input1 {
@@ -726,6 +779,8 @@ a:active {
 
 .list {
   margin: 2rem;
+  border-collapse: collapse;
+  border-top: 1px solid grey;
 }
 
 .line {
@@ -738,8 +793,7 @@ a:active {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid grey;
   width: 800px;
 }
 
