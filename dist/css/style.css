@@ -521,32 +521,38 @@ a:active {
   position: absolute;
 }
 
-.img-s:hover::after {
-  background: #f1f500;
-  top: 20px;
-  left: 1080px;
-}
-
 .img-s-2::after {
   margin: 0;
   padding: 0;
   position: absolute;
   width: 15px;
   height: 15px;
-  background: #47f801;
-  content: '';
-  top: 450px;
-  left: 65px;
+  background: #66fd01;
   border-radius: 50%;
+  opacity: 1;
+  content: '';
+  top: 5px;
+  left: 50px;
   transition: .5s all ease-in-out;
-  position: absolute;
+}
+
+.pseudo-circle img {
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  transition: 1s all linear;
+  display: block;
+}
+
+.img-s-2 {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .img-s-2:hover::after {
-  top: 0px;
-  left: 0px;
-  top: 445px;
-  left: 65px;
+  top: 5px;
+  left: 50px;
   background: #f1f500;
 }
 
@@ -795,6 +801,10 @@ a:active {
       align-items: center;
   border-bottom: 1px solid grey;
   width: 800px;
+}
+
+.line:hover {
+  background: #979797;
 }
 
 .list span {
