@@ -981,6 +981,9 @@ a:active {
     padding: 0px;
     margin: 0px;
   }
+  .table-cell {
+    width: 200px;
+  }
 }
 
 @media (min-width: 992px) {
