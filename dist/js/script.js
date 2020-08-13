@@ -39,7 +39,7 @@ var chart = new Chart(ctx, {
 /*menu*/
 function toggleMenu(visible) {
   document.querySelector('.sidebar').classList.toggle('show', visible);
-  document.querySelector('.img-s:hover::after').classList.toggle('roll', visible);
+  document.querySelector('.sidebar').classList.toggle('none', visible);
 
 }
 

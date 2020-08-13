@@ -597,6 +597,9 @@ a:active {
 
 .show {
   animation: popup2 1s linear 2.5s slidein;
+}
+
+.none {
   display: none;
 }
 
@@ -859,5 +862,102 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
+}
+
+/*media query*/
+@media (max-width: 767px) {
+  .sidebar-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    position: relative;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+    height: auto;
+    width: 100vw;
+  }
+  .navigation {
+    width: auto;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .container-content {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center !important;
+    -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    -ms-flex-align: center !important;
+        align-items: center !important;
+  }
+  .section-general-statistic {
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center !important;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+    -ms-flex-align: center !important;
+        align-items: center !important;
+  }
+  .manager {
+    display: none;
+  }
+  .img {
+    margin: 0;
+    padding: 0;
+  }
+  .img span {
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar {
+    height: 100vh;
+  }
+  .logo {
+    -ms-flex-align: baseline;
+        align-items: baseline;
+  }
+  .navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .section-links {
+    text-align: left;
+  }
+  .section-links .list {
+    margin-left: 0;
+  }
+  .line {
+    text-align: left;
+  }
+  #myChart {
+    width: 300px;
+    height: 300px;
+  }
+  .chart {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .user-bar {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-bar {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
 }
 /*# sourceMappingURL=style.css.map */
