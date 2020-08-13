@@ -955,9 +955,10 @@ a:active {
   .line {
     text-align: left;
   }
-  #myChart {
-    width: 300px;
-    height: 300px;
+  .chart {
+    margin-top: 4rem;
+    width: 45vh;
+    height: 20vw;
   }
   .table {
     display: -ms-flexbox;
@@ -981,8 +982,31 @@ a:active {
     padding: 0px;
     margin: 0px;
   }
-  .table-cell {
-    width: 200px;
+  .table-cell,
+  .line {
+    width: 300px;
+  }
+  .container-content-2 {
+    width: 90% !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    text-align: center !important;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+    -ms-flex-align: center !important;
+        align-items: center !important;
+    margin: 5% 5% 0% 5% !important;
+  }
+  .list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    font-size: 10px;
+  }
+  .line span {
+    margin: 2px;
+    padding: 0px;
   }
 }
 
