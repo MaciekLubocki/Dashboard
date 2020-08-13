@@ -531,8 +531,27 @@ width: 80% !important;
 }
 
 .line-opaq {
-width: 50%;
+width: 100%;
+}
 
+
+.section-title {
+display: flex;
+
+align-self: center;
+padding:0px;
+margin:0px;
+
+
+}
+
+
+.form-data {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
@@ -540,14 +559,6 @@ width: 50%;
 
 
 
-
-
-
-
-
-
-
-}
 
 
 
@@ -611,7 +622,7 @@ width: 50%;
   .chart {
     width: 300px;
   }
-
+}
 
 @media(min-width: 992px) {
   .user-bar {
