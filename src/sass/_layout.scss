@@ -513,46 +513,42 @@ a:active {
     position: relative;
   }
 
-.container-content {
-  width: 90% !important;
-  display: flex !important;
-  text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin: 5% 5% 0% 5% !important;
-}
+  .container-content {
+    width: 90% !important;
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 5% 5% 0% 5% !important;
+  }
 
-.section-general-statistic {
-display: flex;
-text-align: center !important;
-justify-content: center !important;
-align-items: center !important;
-width: 80% !important;
-}
+  .section-general-statistic {
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 80% !important;
+  }
 
-.line-opaq {
-width: 100%;
-}
+  .line-opaq {
+    width: 100%;
+  }
 
-
-.section-title {
-display: flex;
-
-align-self: center;
-padding:0px;
-margin:0px;
-
-
-}
+  .section-title {
+    display: flex;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+  }
 
 
-.form-data {
-  display: flex;
-  flex-direction: column !important;
-  justify-content: center;
-  align-items: center;
-  
-}
+  .form-data {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+
+  }
 
   .manager {
     display: none;
@@ -564,16 +560,11 @@ margin:0px;
     padding: 0;
 
     span {
-
       margin: 0;
       padding: 0;
-
-
-
     }
 
   }
-
 
   .sidebar {
     height: 100vh;
@@ -583,7 +574,7 @@ margin:0px;
     align-items: baseline;
   }
 
-  
+
   .section-links {
     text-align: left;
 
@@ -596,37 +587,57 @@ margin:0px;
     text-align: left;
   }
 
-  #myChart {
-    width: 300px;
-    height: 300px;
+  .chart {
+    margin-top: 4rem;
+    width: 45vh;
+    height: 20vw;
   }
 
+  .table {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+  }
 
-.table {
-display: flex;
-flex-direction: column;
-width: 50%;
-padding: 0px;
-margin: 0px;
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 0px;
+    margin: 0px;
 
-}
+  }
 
-.box {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 20%;
-padding: 0px;
-margin: 0px;
+  .table-cell,
+  .line {
+    width: 300px;
+  }
 
-}
+  .container-content-2 {
+    width: 90% !important;
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 5% 5% 0% 5% !important;
 
-.table-cell {
-width: 200px;
+  }
 
+  .list {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
 
-}
+  .line span {
+    margin: 2px;
+    padding: 0px;
+  }
+
 
 }
 
