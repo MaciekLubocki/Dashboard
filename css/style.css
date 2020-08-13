@@ -364,6 +364,15 @@ body {
   border-radius: 5px;
 }
 
+.button-new {
+  background-color: #ff7b00;
+  padding: 10px 15px;
+  color: #fff;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
 /*Side menu*/
 .sidebar-container {
   height: 100%;
@@ -378,9 +387,10 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   z-index: 20;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
-.Xa13 {
+@keyframes .Xa13 {
   border: 0.1px solid yellow;
 }
 
@@ -398,7 +408,7 @@ body {
   border-bottom: 1px solid #726262;
 }
 
-li {
+.sidebar li {
   left: 0px;
   list-style: none;
   color: #fff;
@@ -415,6 +425,11 @@ ul img {
 a {
   color: #fff;
   list-style: none;
+  text-decoration: none;
+}
+
+a span:hover {
+  text-decoration: none;
 }
 
 a:link {
@@ -472,10 +487,21 @@ a:active {
 }
 
 .manager img {
-  width: 80px;
-  height: 100%;
-  border-radius: 50%;
-  padding-right: 10px;
+  -ms-flex: 0 0 60px;
+      flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.img-s::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 7.5px;
+  background-color: #00f700;
 }
 
 .side-picture {
@@ -503,11 +529,15 @@ a:active {
   box-shadow: 0px 0px 50px 0px #000;
 }
 
+.show {
+  display: none;
+}
+
 .input1 {
   border-radius: 0px 0px 0px 1555px;
   padding: 5px;
   border: 1px solid #111;
-  font-size: 15px;
+  font-size: 1px;
 }
 
 .input2 {
@@ -588,7 +618,12 @@ a:active {
 .img {
   border-right: 1px solid gray;
   border-left: 1px solid gray;
-  padding: 20px 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.img span {
+  padding-left: 15px;
+  padding-left: 15px;
 }
 
 .navigation img {
@@ -640,8 +675,6 @@ a:active {
   -ms-flex-direction: row;
       flex-direction: row;
   color: #fff;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
   -ms-flex-align: left;
       align-items: left;
 }
@@ -686,7 +719,33 @@ a:active {
       flex-direction: column;
 }
 
-.line, .link {
+.line,
+.link {
   color: #000;
+}
+
+.list {
+  margin: 2rem;
+}
+
+.line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  color: #000;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 800px;
+}
+
+.list span {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
