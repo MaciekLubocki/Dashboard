@@ -887,7 +887,7 @@ a:active {
     position: relative;
   }
   .container-content {
-    width: 80% !important;
+    width: 90% !important;
     display: -ms-flexbox !important;
     display: flex !important;
     text-align: center !important;
@@ -895,7 +895,20 @@ a:active {
         justify-content: center !important;
     -ms-flex-align: center !important;
         align-items: center !important;
-    margin: 5% 10% 0% 10% !important;
+    margin: 5% 5% 0% 5% !important;
+  }
+  .section-general-statistic {
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center !important;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+    -ms-flex-align: center !important;
+        align-items: center !important;
+    width: 80% !important;
+  }
+  .line-opaq {
+    width: 50%;
   }
 }
 
