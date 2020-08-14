@@ -35,15 +35,13 @@ new Chart(ctx, {
   },
 });
 
-
 /*menu*/
-function toggleMenu(visible) {
-  document.querySelector('.sidebar').classList.toggle('show', visible);
-  document.querySelector('.sidebar').classList.toggle('none', visible);
-
+function toggleMenu() {
+  var qs1 = document.querySelector('.sidebar');
+  qs1.classList.toggle('none');
 }
-
-document.querySelector('.fa-bars').addEventListener('click', function(e) {
+var qs2 = document.querySelector('.fa-bars');
+qs2.addEventListener('click', function (e) {
   e.preventDefault();
   toggleMenu();
 });

@@ -35,6 +35,7 @@ body {
   margin-left: 10px;
   border: none;
   border-radius: 5px;
+  transition: background-color 1s ease-in-out;
 }
 
 .button-new {
@@ -44,6 +45,7 @@ body {
   margin-left: 10px;
   border: none;
   border-radius: 5px;
+  transition: background-color 1s ease-in-out;
 }
 
 
@@ -97,6 +99,11 @@ body {
 }
 
 
+button:hover {
+  background-color: rgb(240, 247, 214);
+  color: #5452a7;
+}
+
 a {
   color: $side-font-color;
   list-style: none;
@@ -104,13 +111,17 @@ a {
 }
 
 a:hover {
-  color: $side-font-color;
   text-decoration: none !important;
-
 }
 
 a span:hover {
   text-decoration: none;
+  color: $paragraph-color;
+}
+
+.img:hover {
+  text-decoration: none;
+  background-color: orange;
 }
 
 a:link {
@@ -155,7 +166,7 @@ a:active {
   align-items: left;
   margin: 0px 20px 0px 20px;
 
-  h1 {
+  h3 {
     font-size: 18px;
   }
 
@@ -169,20 +180,6 @@ a:active {
   }
 }
 
-// .img-s::after{
-//   content: '';
-//   display: inline-block;
-//   width: 7px;
-//   height: 7px;
-//   -moz-border-radius: 7.5px;
-//   -webkit-border-radius: 7.5px;
-//   border-radius: 7.5px;
-//   background-color: #00f700;
-//   position: absolute;
-//   top:40px;
-//   left:1000px;
-// }
-
 .img-s::after {
   margin: 0;
   padding: 0;
@@ -193,10 +190,10 @@ a:active {
   content: '';
   top: 20px;
   left: 1067px;
+  transition: .5s all ease-in-out;
   border-radius: 50%;
   transition: .5s all ease-in-out;
   position: absolute;
-
 }
 
 .img-s-2::after {
@@ -317,9 +314,7 @@ a:active {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  // margin-left: -150px;
   margin-top: -100px;
-  // margin-right: 100px;
   background-color: white;
   width: 100%;
 }
@@ -330,13 +325,9 @@ a:active {
   justify-content: center;
   text-align: center;
   position: relative;
-  height: 40vh;
-  width: 60vw;
-  // margin-left: 100px;
-  // margin-top: -100px;
-  // margin-right: 100px;
+  width: 100%;
+  height: auto;
 }
-
 
 .navigation {
   position: relative;
@@ -382,7 +373,6 @@ a:active {
   text-align: center;
   align-items: center;
   padding: 2rem 0rem 4rem 0rem;
-  // border: 1px solid #000;
 }
 
 .line-opaq {
@@ -428,14 +418,11 @@ a:active {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(185, 183, 183);
-  // padding-left:0px ;
-  // padding-right:250px ;
   width: 400px;
 }
 
 .table-cell span {
   display: flex;
-  // align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -464,18 +451,20 @@ a:active {
   display: flex;
   flex-direction: row;
   color: #000;
-  // margin-bottom:2rem;
   justify-content: space-between;
   align-items: center;
-  // border-top: 1px solid #000;
-  // border-bottom: 1px solid #000;
-  // padding:20px;
-  // padding-right:250px ;
   border-bottom: 1px solid rgb(185, 183, 183);
   width: 800px;
 }
 
-.line:hover {
+.line:hover,
+.trash a:hover,
+.linkz a:hover {
+  background: rgb(240, 247, 214);
+  color: #5452a7;
+}
+
+.link a:hover {
   background: rgb(240, 247, 214);
   color: #5452a7;
 }
@@ -541,7 +530,6 @@ a:active {
     margin: 0px;
   }
 
-
   .form-data {
     display: flex;
     flex-direction: column !important;
@@ -553,7 +541,6 @@ a:active {
   .manager {
     display: none;
   }
-
 
   .img {
     margin: 0;
@@ -587,8 +574,8 @@ a:active {
 
   .chart {
     margin-top: 4rem;
-    width: 45vh;
-    height: 20vw;
+    width: 100%;
+    height: auto;
   }
 
   .table {
@@ -725,8 +712,8 @@ a:active {
 
   .chart {
     margin-top: 4rem;
-    width: 45vh;
-    height: 20vw;
+    width: 100%;
+    height: auto;
   }
 
   .table {
@@ -862,8 +849,8 @@ a:active {
 
   .chart {
     margin-top: 4rem;
-    width: 45vh;
-    height: 20vw;
+    width: 100%;
+    height: auto;
   }
 
   .table {
