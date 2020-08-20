@@ -1,1 +1,1 @@
-https://macieklubocki.github.io/Dashboard/
+https://macieklubocki.github.io/Dashboard/dist/
