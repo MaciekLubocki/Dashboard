@@ -35,15 +35,69 @@ new Chart(ctx, {
   },
 });
 
-/*menu*/
-function toggleMenu() {
-  var qs1 = document.querySelector('.sidebar');
-  qs1.classList.toggle('none');
+/*Modal*/
+
+function closeModal() {
+  document.getElementById('overlay').classList.remove('show');
 }
-var qs2 = document.querySelector('.fa-bars');
-qs2.addEventListener('click', function (e) {
-  e.preventDefault();
-  toggleMenu();
+
+document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    closeModal();
+  });
+});
+
+document.querySelector('#overlay').addEventListener('click', function (e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keyup', function (e) {
+  if (e.keyCode === 27) {
+    closeModal();
+  }
 });
 
 
+function openModal(modal) {
+  document.querySelectorAll('#overlay > *').forEach(function (modal) {
+    modal.classList.remove('show');
+  });
+  document.querySelector('#overlay').classList.add('show');
+  document.querySelector(modal).classList.add('show');
+}
+
+document.querySelector('#myBtn').addEventListener('click', function () {
+  openModal('#myModal');
+});
+
+
+/*sidebar */
+
+const sideBar = document.querySelector('.section-statistic');
+const sideBar2 = document.querySelector('.section-statistic2');
+const container = document.querySelector('.container-content');
+const container2 = document.querySelector('.container-content2');
+const circle = document.querySelector('.circ-s');
+
+document.querySelector('.fas').addEventListener('click', function () {
+  this.classList.toggle('active');
+  sideBar.classList.toggle('active');
+  sideBar2.classList.toggle('active');
+  container.classList.toggle('active');
+  container2.classList.toggle('active');
+  circle.classList.toggle('movie-circ');
+
+  document.querySelector('.manager img').classList.toggle('move-img');
+  document.querySelector('.manager h3').classList.toggle('text-transparent');
+  document.querySelector('.side-picture a').classList.toggle('none');
+  document.querySelector('.sidebar-container').classList.toggle('vanish');
+  
+  document.querySelectorAll('.p-move').forEach(function (x) {
+    x.classList.toggle('hide');});
+  
+  document.querySelectorAll('.sidebar-svg').forEach(function (x) {
+    x.classList.toggle('move');});
+});
