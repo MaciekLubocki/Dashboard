@@ -1,8 +1,17 @@
 /* Colors */
 $paragraph-color: #000000;
 $brand-main-color: #ff0000;
-$side-font-color: #fff;
-$side-font-color-2: orange;
+$sidebar-border: rgba (0,0,0,0);
+$background: rgb(240, 247, 214);
+$circle:#47f801;
+$white: #fff;
+$black: rgb(15, 15, 15);
+$blue: #56819f;
+$grey: #333333;
+$light-grey: #c9c9c9;
+
+$orange: #f58220;
+
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -11,3 +20,9 @@ $paragraph-font-size: 16px;
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
 $logo-font: 'Dancing Script', cursive;
+
+$side-bar-width: 200px;
+$top-bar-height: 60px;
+$side-bar-offset: ($side-bar-width + 18px);
+$side-bar-closed: ($side-bar-width * .7);
+$top-bar-offset: ($top-bar-height + 18px);
