@@ -377,13 +377,13 @@ button:hover {
     align-items: center;
     height: (($side-bar-width - $side-bar-closed));
     background-color: inherit;
-    
+
     @include fade;
 
     :hover {
       color: $white;
     }
-    
+
     .active {
       color: $white;
       background: $grey;
@@ -407,30 +407,23 @@ button:hover {
       display: none;
     }
   }
+}
 
-    .p-move.hide-other-media {
-      transform: translateX(-$side-bar-closed);
-      @include menu-item-fade-out;
-      color:$white;
-    }
+.sidebar-svg {
+  width: ($side-bar-width * 0.3);
+  @include flex-center;
+
+  .active {
+    border-left: 2px solid $orange;
   }
 
-  .sidebar-svg {
-    width: ($side-bar-width * 0.3);
-    @include flex-center;
-
-    .active {
-      border-left: 2px solid $orange;
-    }
-
-    div {
-      align-self: center;
-      height: auto;
-      font-size: 1.2rem;
-      color: inherit;
-    }
+  div {
+    align-self: center;
+    height: auto;
+    font-size: 1.2rem;
+    color: inherit;
   }
-
+}
 
 .sidebar-elements-anim {
   border-left: 5px solid rgba(0, 0, 0, 0);
@@ -453,9 +446,9 @@ a.sidebar-item {
 }
 
 .vanish-other-media {
-height: 100vh !important;
-display: flex;
-flex-direction: column !important;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column !important;
 }
 
 .move {
@@ -463,8 +456,8 @@ flex-direction: column !important;
 }
 
 .move-other-media {
-  left: 200px;
-  top: 100px;
+  left: 60px;
+  top: -30px;
 }
 
 .move-img {
@@ -519,7 +512,6 @@ flex-direction: column !important;
   padding: 0.5rem 0rem 1rem 0rem;
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
-
 
   h3 {
     margin-top: 1rem;
@@ -616,7 +608,6 @@ flex-direction: column !important;
   align-items: center;
 }
 
-
 // Navigation
 
 .navigation {
@@ -660,7 +651,7 @@ span {
 .img {
   border-left: 1px solid $light-grey;
   padding: 20px 20px 20px 20px;
-  
+
   span {
     color: black;
   }
@@ -680,7 +671,6 @@ span {
   transition: 0.5s all ease-in-out;
   position: absolute;
 }
-
 
 /*modal*/
 .overlay {
@@ -948,9 +938,38 @@ input:focus {
     width: 1100px;
   }
 
-.content-section {
-  width:1100px;
-}
+  .content-section {
+    width: 1100px;
+  }
+
+  .sidebar-item {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    justify-items: center;
+  }
+
+  a .sidebar-item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 2px solid $orange;
+    border-left: 0px solid $orange;
+    padding: 0px;
+    margin: 0px;
+    width: 10px;
+  }
+  .sidebar-svg {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: center;
+  }
+
+  .sidebar-elements-anim:hover {
+    border-bottom: 2px solid $orange;
+    border-left: 0px solid $orange;
+  }
 
   .navigation {
     width: 1100px;
@@ -990,6 +1009,33 @@ input:focus {
     margin: 0px;
   }
 
+.p-move {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-items: center;
+}
+
+
+  p-move.hide-other-media {
+    transition: none;
+    transform: none;
+    border-left: 0px solid $orange;
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .sidebar-svg {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .form-data {
     display: flex;
     flex-direction: column !important;
@@ -1002,35 +1048,35 @@ input:focus {
   }
 
   .img {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 
     span {
-      margin: 0;
-      padding: 0;
+      margin: 0px;
+      padding: 0px;
     }
   }
 
   .sidebar {
-  // height: 100vh;
-  display: none;
+    // height: 100vh;
+    display: none;
     // top:-400rem !important;
     // left:50rem;
-}
+  }
 
   .sidebar-other-media {
-  // height: 100vh;
-  // display: none;
-    top:0px !important;
+    // height: 100vh;
+    // display: none;
+    top: 0px !important;
     left: 100px;
     display: flex;
     flex-direction: row;
   }
 
-.manager {
-  display: none;
+  .manager {
+    display: none;
+  }
 
-}
   .logo {
     align-items: baseline;
   }
@@ -1227,7 +1273,7 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 992px) {
+@media screen and (max-width: 993px) and (min-width: 992px) {
   .sidebar-container {
     display: flex;
     flex-direction: row;
@@ -1364,3 +1410,6 @@ input:focus {
   }
 }
 
+.Xa13 {
+  border: 1px solid yellow;
+}

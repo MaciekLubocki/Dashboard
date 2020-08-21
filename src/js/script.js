@@ -82,7 +82,7 @@ const container = document.querySelector('.container-content');
 const container2 = document.querySelector('.container-content2');
 const circle = document.querySelector('.circ-s');
 
-var jmediaquery = window.matchMedia('(min-width: 1201px)');
+var jmediaquery = window.matchMedia('(min-width: 1000px)');
 if (jmediaquery.matches) {
 
   document.querySelector('.fas').addEventListener('click', function () {
