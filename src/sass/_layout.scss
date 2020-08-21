@@ -943,10 +943,11 @@ input:focus {
   }
 
   .sidebar-item {
-    display: flex;
-    position: absolute;
-    align-content: center;
-    justify-items: center;
+    display: flex !important;
+    position: relative !important;
+    align-content: center !important;
+    justify-items: center !important;
+    width: 100%;
   }
 
   a .sidebar-item {
@@ -959,6 +960,7 @@ input:focus {
     margin: 0px;
     width: 10px;
   }
+  
   .sidebar-svg {
     margin: 0px;
     padding: 0px;
@@ -966,9 +968,26 @@ input:focus {
     position: center;
   }
 
-  .sidebar-elements-anim:hover {
+  .sidebar-elements-anim {
+    display: flex;
+    position: relative;
+    // border-bottom: 2px solid $orange;
+    border-left: none;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .sidebar-elements-anim:hover,
+  .sidebar-elements-anim:active {
     border-bottom: 2px solid $orange;
     border-left: 0px solid $orange;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-content: center;
   }
 
   .navigation {
@@ -1009,15 +1028,14 @@ input:focus {
     margin: 0px;
   }
 
-.p-move {
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  position: relative;
-  align-content: center;
-  justify-items: center;
-}
-
+  .p-move {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-items: center;
+  }
 
   p-move.hide-other-media {
     transition: none;
@@ -1027,8 +1045,13 @@ input:focus {
     position: relative;
     align-content: center;
     justify-items: center;
-    margin: 0px;
-    padding: 0px;
+    color: green !important;
+  
+    p {
+      margin: 11000px !important;
+      padding: 1000px !important;
+      color: green !important;
+    }
   }
 
   .sidebar-svg {
@@ -1071,6 +1094,7 @@ input:focus {
     left: 100px;
     display: flex;
     flex-direction: row;
+    padding: 1rem !important;
   }
 
   .manager {
@@ -1273,7 +1297,7 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 993px) and (min-width: 992px) {
+@media screen and (max-width: 1050px) and (min-width: 992px) {
   .sidebar-container {
     display: flex;
     flex-direction: row;
@@ -1344,6 +1368,13 @@ input:focus {
     height: 100vh;
   }
 
+  .sidebar li {
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-content: center;
+  }
+
   .logo {
     align-items: baseline;
   }
@@ -1408,8 +1439,4 @@ input:focus {
     margin: 2px;
     padding: 0px;
   }
-}
-
-.Xa13 {
-  border: 1px solid yellow;
 }
