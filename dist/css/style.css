@@ -1481,7 +1481,7 @@ input:focus {
     padding: 0;
   }
   .sidebar {
-    top: -400px !important;
+    display: none;
   }
   .sidebar-other-media {
     top: 0px !important;

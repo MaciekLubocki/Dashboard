@@ -1011,8 +1011,9 @@ input:focus {
 
   .sidebar {
   // height: 100vh;
-  // display: none;
-    top:-400px !important;
+  display: none;
+    // top:-400rem !important;
+    // left:50rem;
 }
 
   .sidebar-other-media {
