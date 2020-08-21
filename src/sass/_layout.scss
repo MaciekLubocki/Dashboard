@@ -479,7 +479,10 @@ a.sidebar-item {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  background: none;
+  border: none;
+  box-shadow: none;
+  
   h1 {
     font-family: $logo-font;
     color: $light-grey;

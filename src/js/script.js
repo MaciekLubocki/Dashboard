@@ -82,10 +82,12 @@ const container = document.querySelector('.container-content');
 const container2 = document.querySelector('.container-content2');
 const circle = document.querySelector('.circ-s');
 
+const menuToggle = document.querySelector('#menu-toggle');
+
 var jmediaquery = window.matchMedia('(min-width: 1000px)');
 if (jmediaquery.matches) {
 
-  document.querySelector('.fas').addEventListener('click', function () {
+  menuToggle.addEventListener('click', function () {
     this.classList.toggle('active');
     sideBar.classList.toggle('active');
     sideBar2.classList.toggle('active');
@@ -108,7 +110,7 @@ if (jmediaquery.matches) {
   });
 }
 else {
-  document.querySelector('.fas').addEventListener('click', function () {
+  menuToggle.addEventListener('click', function () {
     this.classList.toggle('active-other-media');
     sideBar.classList.toggle('active-other-media');
     sideBar2.classList.toggle('active-other-media');

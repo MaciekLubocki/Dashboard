@@ -910,6 +910,9 @@ a.sidebar-item :focus {
   -ms-flex-align: center;
       align-items: center;
   text-align: center;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .logo h1 {
