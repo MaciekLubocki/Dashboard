@@ -454,6 +454,8 @@ a.sidebar-item {
 
 .vanish-other-media {
 height: 100vh !important;
+display: flex;
+flex-direction: column !important;
 }
 
 .move {

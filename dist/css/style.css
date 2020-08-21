@@ -881,6 +881,10 @@ a.sidebar-item :focus {
 
 .vanish-other-media {
   height: 100vh !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column !important;
+      flex-direction: column !important;
 }
 
 .move {
